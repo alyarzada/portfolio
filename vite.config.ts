@@ -14,13 +14,6 @@ export default defineConfig({
 
   build: {
     assetsDir: "assets",
-    minify: "terser",
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
     rollupOptions: {
       output: {
         chunkFileNames: "assets/js/[name]-[hash].js",
