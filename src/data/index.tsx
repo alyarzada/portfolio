@@ -113,7 +113,7 @@ export const projectsData = [
     id: 1,
     title: "Jubee platform",
     description: "",
-    image: "src/assets/images/jubee.png",
+    image: "assets/images/jubee.png",
     techs: [
       "React",
       "TypeScript",
@@ -129,7 +129,7 @@ export const projectsData = [
     id: 2,
     title: "Rahat Bina",
     description: "",
-    image: "src/assets/images/rahatbina.jpg",
+    image: "assets/images/rahatbina.jpg",
     techs: [
       "React",
       "TypeScript",
@@ -145,7 +145,7 @@ export const projectsData = [
     id: 3,
     title: "Dashboard",
     description: "",
-    image: "src/assets/images/dashboard.webp",
+    image: "assets/images/dashboard.webp",
     techs: [
       "React",
       "TypeScript",
@@ -161,7 +161,7 @@ export const projectsData = [
     id: 4,
     title: "Blog app",
     description: "",
-    image: "src/assets/images/blog.jpg",
+    image: "assets/images/blog.jpg",
     techs: [
       "React",
       "TypeScript",
@@ -177,7 +177,7 @@ export const projectsData = [
     id: 5,
     title: "E-commerce",
     description: "",
-    image: "src/assets/images/e-commerce.jpg",
+    image: "assets/images/e-commerce.jpg",
 
     techs: [
       "Next.js",
@@ -197,7 +197,7 @@ export const projectsData = [
     id: 6,
     title: "Social-Media app (Facebook)",
     description: "",
-    image: "src/assets/images/facebook.png",
+    image: "assets/images/facebook.png",
     techs: [
       "React",
       "TypeScript",
