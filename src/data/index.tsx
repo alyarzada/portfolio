@@ -43,6 +43,14 @@ import jira from "@/assets/svg/jira-1.svg";
 import bitbucket from "@/assets/svg/bitbucket-svgrepo-com.svg";
 import trello from "@/assets/svg/trello.svg";
 
+// projects
+import jubee from "@/assets/images/jubee.png";
+import rahatbina from "@/assets/images/rahatbina.jpg";
+import dashboard from "@/assets/images/dashboard.webp";
+import blog from "@/assets/images/blog.jpg";
+import ecommerce from "@/assets/images/e-commerce.jpg";
+import facebook from "@/assets/images/facebook.png";
+
 // -------------------------------------------------------------------------------------
 
 export const navLinks = [
@@ -113,7 +121,7 @@ export const projectsData = [
     id: 1,
     title: "Jubee platform",
     description: "",
-    image: "assets/images/jubee.png",
+    image: jubee,
     techs: [
       "React",
       "TypeScript",
@@ -129,7 +137,7 @@ export const projectsData = [
     id: 2,
     title: "Rahat Bina",
     description: "",
-    image: "assets/images/rahatbina.jpg",
+    image: rahatbina,
     techs: [
       "React",
       "TypeScript",
@@ -143,7 +151,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "Dashboard",
+    title: dashboard,
     description: "",
     image: "assets/images/dashboard.webp",
     techs: [
@@ -159,7 +167,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "Blog app",
+    title: blog,
     description: "",
     image: "assets/images/blog.jpg",
     techs: [
@@ -197,7 +205,7 @@ export const projectsData = [
     id: 6,
     title: "Social-Media app (Facebook)",
     description: "",
-    image: "assets/images/facebook.png",
+    image: facebook,
     techs: [
       "React",
       "TypeScript",
