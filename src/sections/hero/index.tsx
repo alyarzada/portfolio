@@ -91,8 +91,9 @@ const Hero = () => {
               </GradientButton>
               <Button variant="outline">
                 <a
-                  href="../../assets/Tunar_Alyarzada_CV.pdf"
+                  href="/Tunar_Alyarzada_CV.pdf"
                   download="Tunar_Alyarzada_CV"
+                  type="application/pdf"
                 >
                   Download CV
                 </a>
