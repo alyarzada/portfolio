@@ -12,6 +12,8 @@ import { Toaster } from "@/components/ui/sonner";
 import MotionViewport from "@/components/animation/motion-viewport";
 import { varSlide } from "@/lib/variants";
 
+import ContactSvg from "@/assets/svg/contact.svg";
+
 interface IFormValues {
   name: string;
   email: string;
@@ -42,11 +44,7 @@ const Contact = () => {
     <section id="contact" className="container flex items-center">
       <MotionViewport className="w-[40%]" variants={varSlide("right")}>
         <div className="w-full hidden lg:block">
-          <Image
-            className="rounded w-96"
-            src="/src/assets/svg/contact.svg"
-            alt=""
-          />
+          <Image className="rounded w-96" src={ContactSvg} alt="" />
         </div>
       </MotionViewport>
 
