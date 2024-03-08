@@ -89,7 +89,14 @@ const Hero = () => {
                   See my Work <Flame size={20} className="ml-2" />
                 </a>
               </GradientButton>
-              <Button variant="outline">Download CV</Button>
+              <Button variant="outline">
+                <a
+                  href="../../assets/Tunar_Alyarzada_CV.pdf"
+                  download="Tunar_Alyarzada_CV"
+                >
+                  Download CV
+                </a>
+              </Button>
             </div>
           </Motion>
 
