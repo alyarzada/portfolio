@@ -42,8 +42,11 @@ const Contact = () => {
 
   return (
     <section id="contact" className="container flex items-center">
-      <MotionViewport className="w-[40%]" variants={varSlide("right")}>
-        <div className="w-full hidden lg:block">
+      <MotionViewport
+        className="w-[40%] hidden lg:block"
+        variants={varSlide("right")}
+      >
+        <div className="w-full">
           <Image className="rounded w-96" src={ContactSvg} alt="" />
         </div>
       </MotionViewport>

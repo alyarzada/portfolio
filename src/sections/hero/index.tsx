@@ -30,8 +30,8 @@ const Hero = () => {
 
   return (
     <section className="container z-20 relative pt-[10vh] min-h-[calc(100vh-80px)]">
-      <div className="flex-center lg:flex-between">
-        <div className="w-full lg:w-1/2">
+      <div className="flex-between">
+        <div className="w-full flex-center-col lg:block lg:w-1/2">
           <Spotlight className="top-40 left-0 md:left-10 md:top-5" />
 
           <Motion
@@ -71,7 +71,7 @@ const Hero = () => {
               delay: 1.1,
             })}
           >
-            <p className="text-muted-foreground mb-6">
+            <p className="text-muted-foreground text-center lg:text-start mb-6">
               Experienced React developer specializing in complex dashboard
               projects, with over <br /> three years of expertise in modern tech
               stacks for crafting dynamic and responsive web applications.
@@ -110,11 +110,11 @@ const Hero = () => {
           </Motion>
         </div>
 
-        <MotionViewport variants={varSlide("left")} className="w-1/3">
-          <Image
-            src={ProfileImg}
-            className="rounded-full w-full hidden lg:block shadow-2xl"
-          />
+        <MotionViewport
+          variants={varSlide("left")}
+          className="w-1/3 hidden lg:block"
+        >
+          <Image src={ProfileImg} className="rounded-full w-full  shadow-2xl" />
         </MotionViewport>
       </div>
 
