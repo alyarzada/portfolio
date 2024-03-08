@@ -151,9 +151,9 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: dashboard,
+    title: "Dashboard",
     description: "",
-    image: "assets/images/dashboard.webp",
+    image: dashboard,
     techs: [
       "React",
       "TypeScript",
@@ -167,9 +167,9 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: blog,
+    title: "Blog with CMS",
     description: "",
-    image: "assets/images/blog.jpg",
+    image: blog,
     techs: [
       "React",
       "TypeScript",
@@ -185,7 +185,7 @@ export const projectsData = [
     id: 5,
     title: "E-commerce",
     description: "",
-    image: "assets/images/e-commerce.jpg",
+    image: ecommerce,
 
     techs: [
       "Next.js",
