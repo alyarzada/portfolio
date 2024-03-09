@@ -1,7 +1,7 @@
 import { CardBody, CardContainer, CardItem } from "@/components/complex/card3d";
 import Image from "@/components/ui/image";
 import { projectsData } from "@/data";
-import { ChevronRight, Github, Tv } from "lucide-react";
+import { ChevronRight, Github, LockKeyhole, Tv } from "lucide-react";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -28,9 +28,9 @@ const Portfolio = () => {
       </Title>
 
       <p className="text-muted-foreground mb-16 text-sm">
-        Here is my works. You can see src code on github page or view demo by
-        clicking appropriate buttons. <br /> Additionally, you can click feat
-        button to see top features of the project.
+        Here is my recent works. You can see source code on github page or view
+        demo by clicking appropriate buttons. <br /> Additionally, you can click
+        feat button to see top features of the project.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -80,31 +80,30 @@ const Portfolio = () => {
                 </CardItem>
 
                 <div className="flex-between items-center mt-6">
-                  <div className="flex">
-                    <CardItem
-                      translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white bg-primary"
+                  <div className="flex gap-x-2">
+                    <a
+                      className="flex cursor-pointer w-full h-full px-4 py-2 rounded-xl text-xs font-normal dark:text-white bg-primary"
+                      href={!project.private ? project.githubLink : false}
+                      target="_blank"
                     >
-                      <a
-                        className="flex cursor-pointer"
-                        href={project.githubLink}
-                      >
-                        Github <Github className="h-4 w-4 ml-1" />
-                      </a>
-                    </CardItem>
-                    <CardItem
-                      translateZ={20}
-                      as="button"
-                      className="px-4 py-2 rounded-xl text-foregorund text-xs font-bold"
+                      {project.private ? (
+                        <>
+                          Private <LockKeyhole className="h-4 w-4 ml-1" />
+                        </>
+                      ) : (
+                        <>
+                          Github <Github className="h-4 w-4 ml-1" />
+                        </>
+                      )}
+                    </a>
+
+                    <a
+                      className="flex cursor-pointer w-full h-full px-4 py-2 rounded-xl text-foregorund text-xs font-bold"
+                      href={project.demoLink}
+                      target="_blank"
                     >
-                      <a
-                        className="flex cursor-pointer"
-                        href={project.demoLink}
-                      >
-                        Demo <Tv className="h-4 w-4 ml-1" />
-                      </a>
-                    </CardItem>
+                      Demo <Tv className="h-4 w-4 ml-1" />
+                    </a>
                   </div>
                   <CardItem
                     translateZ={20}
@@ -119,9 +118,7 @@ const Portfolio = () => {
                         <AlertDialogHeader>
                           <AlertDialogTitle>{project.title}</AlertDialogTitle>
                           <AlertDialogDescription>
-                            This action cannot be undone. This will permanently
-                            delete your account and remove your data from our
-                            servers.
+                            Soon...
                           </AlertDialogDescription>
                         </AlertDialogHeader>
                         <AlertDialogFooter>
