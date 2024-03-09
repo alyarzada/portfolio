@@ -24,7 +24,7 @@ const Portfolio = () => {
         className="text-left mb-4"
         textureClassName="ml-0 mr-0 w-[30rem] -translate-x-24"
       >
-        Portfolio
+        Recent works
       </Title>
 
       <p className="text-muted-foreground mb-16 text-sm">

@@ -21,7 +21,7 @@ const Skills = () => {
           className="mb-4 text-left"
           textureClassName="w-[28rem] mr-auto ml-0"
         >
-          Tech Stack
+          Tech stack
         </SparklesText>
 
         <div className="flex flex-col lg:flex-between lg:flex-row">
