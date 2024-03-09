@@ -5,6 +5,7 @@ import {
   Wallpaper,
   Hammer,
   Database,
+  TabletSmartphone,
 } from "lucide-react";
 
 // front end
@@ -437,6 +438,19 @@ export const skillsData = [
   },
   {
     id: 3,
+    field: "Mobile",
+    desc: "I focus on developing dynamic and intuitive mobile applications for both iOS and Android platforms",
+    icon: <TabletSmartphone />,
+    techs: [
+      {
+        id: 1,
+        title: "React Native",
+        icon: react,
+      },
+    ],
+  },
+  {
+    id: 4,
     field: "Tools",
     desc: "I leverage a variety of tools to streamline development processes and enhance collaboration.",
     icon: <Hammer />,

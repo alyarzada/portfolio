@@ -18,14 +18,19 @@ const Skills = () => {
     <section className="container" id="skills">
       <div>
         <SparklesText
-          className="mb-12 text-left"
+          className="mb-4 text-left"
           textureClassName="w-[28rem] mr-auto ml-0"
         >
           Tech Stack
         </SparklesText>
 
         <div className="flex flex-col lg:flex-between lg:flex-row">
-          <div className="w-full mb-8 lg:w-1/2 lg:mb-0">
+          <div className="w-full lg:w-1/2">
+            <p className=" mb-8 text-sm text-muted-foreground">
+              You can click on different areas to view my known tech stack in
+              the right <br /> panel.
+            </p>
+
             <div className="flex lg:grid lg:grid-cols-2 gap-6">
               {skillsData.map((skill, index) => (
                 <MotionViewport
