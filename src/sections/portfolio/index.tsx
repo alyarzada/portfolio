@@ -24,9 +24,9 @@ const Portfolio = () => {
         position="left"
         desc={
           <p>
-            Here is my recent works. You can see source code on github page or
-            view demo by clicking appropriate buttons. <br /> Additionally, you can
-            click feat button to see top features of the project.
+            Here is my recent works. You can see source code on github page
+            (unless it is "private") or <br /> view demo by clicking appropriate
+            buttons.
           </p>
         }
       >
@@ -55,7 +55,7 @@ const Portfolio = () => {
                   translateZ="60"
                   className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 mb-4"
                 >
-                  Hover over this card to unleash the power of CSS perspective
+                  {project.description}
                 </CardItem>
 
                 <CardItem translateZ="100" className="w-full mb-6">
@@ -80,9 +80,9 @@ const Portfolio = () => {
                 </CardItem>
 
                 <div className="flex-between items-center mt-6">
-                  <div className="flex gap-x-2">
+                  <div className="flex justify-end w-full">
                     <a
-                      className="flex cursor-pointer w-full h-full px-4 py-2 rounded-xl text-xs font-normal dark:text-white bg-primary"
+                      className="flex cursor-pointer px-4 py-2 rounded-xl text-xs font-normal dark:text-white bg-primary"
                       href={!project.private ? project.githubLink : false}
                       target="_blank"
                     >
@@ -98,36 +98,14 @@ const Portfolio = () => {
                     </a>
 
                     <a
-                      className="flex cursor-pointer w-full h-full px-4 py-2 rounded-xl text-foregorund text-xs font-bold"
+                      className="flex cursor-pointer px-4 py-2 rounded-xl text-foregorund text-xs font-bold"
                       href={project.demoLink}
                       target="_blank"
                     >
                       Demo <Tv className="h-4 w-4 ml-1" />
                     </a>
                   </div>
-                  <CardItem
-                    translateZ={20}
-                    as="button"
-                    className="px-4 py-2 rounded-xl bg-background text-white text-xs font-bold"
-                  >
-                    <AlertDialog>
-                      <AlertDialogTrigger className="flex">
-                        Feat <ChevronRight className="h-4 w-4 ml-1" />
-                      </AlertDialogTrigger>
-                      <AlertDialogContent>
-                        <AlertDialogHeader>
-                          <AlertDialogTitle>{project.title}</AlertDialogTitle>
-                          <AlertDialogDescription>
-                            Soon...
-                          </AlertDialogDescription>
-                        </AlertDialogHeader>
-                        <AlertDialogFooter>
-                          <AlertDialogCancel>Cancel</AlertDialogCancel>
-                          <AlertDialogAction>Continue</AlertDialogAction>
-                        </AlertDialogFooter>
-                      </AlertDialogContent>
-                    </AlertDialog>
-                  </CardItem>
+                 
                 </div>
               </CardBody>
             </CardContainer>

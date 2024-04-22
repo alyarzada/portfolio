@@ -25,7 +25,6 @@ import tanstack from "@/assets/svg/tanstack.svg";
 // backend
 import node from "@/assets/svg/nodejs.svg";
 import express from "@/assets/svg/express.svg";
-import nextauth from "@/assets/svg/nextauthh.png";
 import prisma from "@/assets/svg/prisma.svg";
 import postgres from "@/assets/svg/postgres.svg";
 import mongodb from "@/assets/svg/mongodb.svg";
@@ -36,7 +35,6 @@ import socket from "@/assets/svg/socketio.svg";
 import strapi from "@/assets/svg/strapi.svg";
 import stripe from "@/assets/svg/stripe.svg";
 import jwt from "@/assets/svg/jwt.svg";
-import mongoose from "@/assets/svg/mongoose.png";
 
 // tools
 import github from "@/assets/svg/github.svg";
@@ -92,28 +90,6 @@ export const socialMediaLinks = [
   },
 ];
 
-// -------------------------------------------------------------------------------------
-
-export const servicesData = [
-  {
-    id: 1,
-    title: "Front-End (React)",
-    description: "",
-    image: "",
-  },
-  {
-    id: 2,
-    title: "Back-End (Node.js)",
-    description: "",
-    image: "",
-  },
-  {
-    id: 3,
-    title: "Full-stack (React-Node.js)",
-    description: "",
-    image: "",
-  },
-];
 
 // -------------------------------------------------------------------------------------
 
@@ -121,7 +97,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Jubee platform",
-    description: "",
+    description: "A comprehensive multi-currency wallet application",
     image: jubee,
     techs: [
       "React.js",
@@ -135,14 +111,13 @@ export const projectsData = [
       "Apexcharts",
       "i18next",
     ],
-    githubLink: "",
     private: true,
     demoLink: "https://dev.jubee.eu",
   },
   {
     id: 2,
     title: "Rahat Bina",
-    description: "",
+    description: "The Property Managment application for the large buildings",
     image: rahatbina,
     techs: [
       "React.js",
@@ -155,14 +130,15 @@ export const projectsData = [
       "React-dropzone",
       "Leaflet",
     ],
-    private: true,
-    githubLink: "https://github.com/alyarzada/blog",
-    demoLink: "",
+    private: false,
+    githubLink:
+      "https://github.com/alyarzada/complex-dashboard-api-react/tree/main",
+    demoLink: false,
   },
   {
     id: 3,
     title: "Dashboard",
-    description: "",
+    description: "Dashboard typed project",
     image: dashboard,
     techs: [
       "React.js",
@@ -173,13 +149,14 @@ export const projectsData = [
       "Hygraph CMS",
     ],
     private: false,
-    githubLink: "https://github.com/alyarzada/blog",
-    demoLink: "",
+    githubLink:
+      "https://github.com/alyarzada/complex-dashboard-api-react/tree/main",
+    demoLink: false,
   },
   {
     id: 4,
     title: "Blog with CMS",
-    description: "",
+    description: "Blog website with Content management system",
     image: blog,
     techs: [
       "React.js",
@@ -196,7 +173,7 @@ export const projectsData = [
   {
     id: 5,
     title: "E-commerce",
-    description: "",
+    description: "E-commerce application for electronics",
     image: ecommerce,
 
     techs: [
@@ -218,7 +195,7 @@ export const projectsData = [
   {
     id: 6,
     title: "Social Media App",
-    description: "",
+    description: "Facebook clone",
     image: facebook,
     techs: [
       "React.js",
