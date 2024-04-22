@@ -18,7 +18,7 @@ function App() {
 
       <About />
 
-      <Skills />
+        <Skills />
 
       <Experience />
 
