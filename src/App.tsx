@@ -9,7 +9,7 @@ import Skills from "@/sections/skills";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <GridBackground />
 
       <Header />
