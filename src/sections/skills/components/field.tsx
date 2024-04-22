@@ -28,7 +28,7 @@ const Field: FC<IProps> = ({
   return (
     <Card
       className={cn(
-        "p-10 cursor-pointer h-full relative rounded-3xl overflow-hidden hover:shadow-lg hover:shadow-primary transition-all duration-300",
+        "p-4 md:p-10 cursor-pointer h-full relative rounded-3xl overflow-hidden hover:shadow-lg hover:shadow-primary transition-all duration-300",
         {
           "border-cyan-500/50": id === activeId,
         }

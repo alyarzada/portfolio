@@ -21,17 +21,17 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="container">
       <Title
-        className="text-left mb-4"
-        textureClassName="ml-0 mr-0 w-[30rem] -translate-x-24"
+        position="left"
+        desc={
+          <p>
+            Here is my recent works. You can see source code on github page or
+            view demo by clicking appropriate buttons. <br /> Additionally, you can
+            click feat button to see top features of the project.
+          </p>
+        }
       >
         Recent works
       </Title>
-
-      <p className="text-muted-foreground mb-16 text-sm">
-        Here is my recent works. You can see source code on github page or view
-        demo by clicking appropriate buttons. <br /> Additionally, you can click
-        feat button to see top features of the project.
-      </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projectsData.map((project, index) => (

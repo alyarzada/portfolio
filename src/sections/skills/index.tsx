@@ -15,23 +15,23 @@ const Skills = () => {
   };
 
   return (
-    <section className="container" id="skills">
+    <section className="container flex items-center mb-12 lg:mb-0" id="skills">
       <div>
         <SparklesText
-          className="mb-4 text-left"
-          textureClassName="w-[28rem] mr-auto ml-0"
+          position="left"
+          desc={
+            <p>
+              You can click on different areas to view my known tech stack in
+              <br /> the right panel.
+            </p>
+          }
         >
           Tech stack
         </SparklesText>
 
-        <div className="flex flex-col lg:flex-between lg:flex-row">
+        <div className="flex flex-col gap-y-8 lg:flex-between lg:flex-row">
           <div className="w-full lg:w-1/2">
-            <p className=" mb-8 text-sm text-muted-foreground">
-              You can click on different areas to view my known tech stack in
-              the right <br /> panel.
-            </p>
-
-            <div className="flex lg:grid lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               {skillsData.map((skill, index) => (
                 <MotionViewport
                   className="h-[202px]"
@@ -51,7 +51,7 @@ const Skills = () => {
           </div>
 
           <MotionViewport variants={varRotate(-10)}>
-            <BackgroundGradient className="rounded-[22px] min-w-[500px] min-h-[400px] max-w-sm bg-background">
+            <BackgroundGradient className="rounded-[22px] min-w-[500px] min-h-[400px] bg-background">
               <TechTable techs={handleTechs()} />
             </BackgroundGradient>
           </MotionViewport>

@@ -13,6 +13,7 @@ import MotionViewport from "@/components/animation/motion-viewport";
 import { varSlide } from "@/lib/variants";
 
 import ContactSvg from "@/assets/svg/contact.svg";
+import postgres from "@/assets/svg/postgres.svg";
 
 interface IFormValues {
   name: string;
@@ -53,16 +54,9 @@ const Contact = () => {
 
       <MotionViewport className="w-full lg:w-1/2" variants={varSlide("left")}>
         <div className="w-full">
-          <Title
-            className="mb-4 text-right"
-            textureClassName="ml-auto translate-x-14"
-          >
+          <Title position="right" desc="Let's make something great together!">
             Get in touch
           </Title>
-
-          <p className="text-muted-foreground text-right mb-4">
-            Let's make something great together!
-          </p>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-4  ">
             <Input placeholder="Name" {...register("name")} />

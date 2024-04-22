@@ -12,7 +12,7 @@ interface IProps {
 
 const TechTable: FC<IProps> = ({ techs }) => {
   return (
-    <div className="overflow-hidden relative p-4 sm:p-10">
+    <div className="overflow-hidden w-full relative p-4 sm:p-10">
       <ul className="grid grid-cols-2 gap-6 p-3">
         {techs?.map((tech) => (
           <li key={tech.id} className="flex gap-x-2">

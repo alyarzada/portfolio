@@ -15,7 +15,7 @@ const Hero = () => {
   const [currentJobIndex, setCurrentJobIndex] = useState<number>(0);
   const [scope, animate] = useAnimate();
 
-  const jobTitles = ["Developer", "Programmer", "Coder"];
+  const jobTitles = ["Frontend", "Backend", "Fullstack"];
 
   useEffect(() => {
     setInterval(() => {
@@ -36,20 +36,12 @@ const Hero = () => {
 
           <Motion
             variants={varSlide("up", {
-              delay: 0.8,
-            })}
-            className="font-semibold text-primary leading-none text-[60px]"
-          >
-            Hello,
-          </Motion>
-
-          <Motion
-            variants={varSlide("up", {
               delay: 0.9,
             })}
           >
-            <p className="whitespace-nowrap font-semibold leading-none text-[60px]">
-              I'm Tunar Alyarzada
+            <p className="whitespace-nowrap font-semibold leading-none text-[40px] sm:text-[50px] md:text-[60px] text-center lg:text-left">
+              <span className="text-primary">Hello,</span> <br /> I'm Tunar
+              Alyarzada
             </p>
           </Motion>
 
@@ -58,10 +50,12 @@ const Hero = () => {
               delay: 1,
             })}
           >
-            <div className="flex gap-x-2 text-[30px] mb-8">
-              <h1 ref={scope}>{jobTitles[currentJobIndex]}</h1>
+            <div className="flex whitespace-nowrap gap-x-2 mb-6 lg:mb-2 mt-2 lg:mt-0 text-[18px] sm:text-[20px] md:text-[30px]">
+              <h1 className="w-[78px] md:w-[134px]" ref={scope}>
+                {jobTitles[currentJobIndex]}
+              </h1>
               <span className="flex items-center gap-x-1">
-                based in Azerbaijan <MapPin />
+                Engineer based in Azerbaijan <MapPin />
               </span>
             </div>
           </Motion>
@@ -73,8 +67,8 @@ const Hero = () => {
           >
             <p className="text-muted-foreground text-center lg:text-start mb-6">
               Experienced React developer specializing in complex dashboard
-              projects, with over <br /> three years of expertise in modern tech
-              stacks for crafting dynamic and responsive web applications.
+              projects, with over three years of expertise in modern tech stacks
+              for crafting dynamic and responsive web applications.
             </p>
           </Motion>
 
@@ -91,8 +85,8 @@ const Hero = () => {
               </GradientButton>
               <Button variant="outline">
                 <a
-                  href="/Tunar_Alyarzada_CV.pdf"
-                  download="Tunar_Alyarzada_CV"
+                  href="/Tunar_Alyarzada_Resume.pdf"
+                  download="Tunar_Alyarzada_Resume"
                   type="application/pdf"
                 >
                   Download CV

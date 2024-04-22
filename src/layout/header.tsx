@@ -5,6 +5,7 @@ import { navLinks } from "@/data";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useState } from "react";
 import NavLink from "./components/NavLink";
+import { cn } from "@/lib/utils";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
@@ -12,12 +13,15 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header className="container z-20 relative min-h-20 py-6">
+    <header
+      className={cn("container lg:z-20 lg:relative  min-h-20 py-6")}
+    >
       <nav className="flex-between relative">
         {!matches ? (
           <Button
             size="icon"
             variant="ghost"
+            className="z-20 relative"
             onClick={() => setShowMenu(!showMenu)}
           >
             <Menu />
@@ -31,13 +35,18 @@ const Header = () => {
         )}
 
         <div className="flex">
-          <Button variant="ghost" size="icon" onClick={toggleTheme}>
+          <Button
+            variant="ghost"
+            className="z-20 relative"
+            size="icon"
+            onClick={toggleTheme}
+          >
             {theme === "dark" ? <Moon color="white" /> : <Sun />}
           </Button>
         </div>
 
         {showMenu && (
-          <div className="absolute top-14 border border-white-100 w-full p-3 rounded-xl">
+          <div className="absolute z-50 top-14 border border-white-100 w-full p-3 rounded-xl">
             <nav>
               <ul className="flex-center gap-x-12">
                 {navLinks.map((navLink) => {
