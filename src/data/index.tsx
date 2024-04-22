@@ -190,7 +190,7 @@ export const projectsData = [
     ],
     githubLink: "https://github.com/alyarzada/ecommerce-next",
     private: false,
-    demoLink: "",
+    demoLink: false,
   },
   {
     id: 6,
@@ -210,7 +210,7 @@ export const projectsData = [
     ],
     githubLink: "https://github.com/alyarzada/facebook-clone-fullstack",
     private: false,
-    demoLink: "",
+    demoLink: false,
   },
 ];
 

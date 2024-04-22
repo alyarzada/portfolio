@@ -1,21 +1,11 @@
 import { CardBody, CardContainer, CardItem } from "@/components/complex/card3d";
 import Image from "@/components/ui/image";
 import { projectsData } from "@/data";
-import { ChevronRight, Github, LockKeyhole, Tv } from "lucide-react";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+import {  Github, LockKeyhole, Tv } from "lucide-react";
 import Title from "@/components/complex/title";
 import MotionViewport from "@/components/animation/motion-viewport";
 import { varSlide } from "@/lib/variants";
+import { toast } from "sonner";
 
 const Portfolio = () => {
   return (
@@ -97,15 +87,24 @@ const Portfolio = () => {
                       )}
                     </a>
 
-                    <a
-                      className="flex cursor-pointer px-4 py-2 rounded-xl text-foregorund text-xs font-bold"
-                      href={project.demoLink}
-                      target="_blank"
-                    >
-                      Demo <Tv className="h-4 w-4 ml-1" />
-                    </a>
+                    <button onClick={() => {
+                      if (!project.demoLink) toast("Sorry, Demo is not available now:(", {
+                        action: {
+                          label: "Try again later",
+                          onClick: () => console.log("Undo"),
+                        },
+                      });
+                      
+                    }}>
+                      <a
+                        className="flex cursor-pointer px-4 py-2 rounded-xl text-foregorund text-xs font-bold"
+                        href={project.demoLink}
+                        target="_blank"
+                      >
+                        Demo <Tv className="h-4 w-4 ml-1" />
+                      </a>
+                    </button>
                   </div>
-                 
                 </div>
               </CardBody>
             </CardContainer>
