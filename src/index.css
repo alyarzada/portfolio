@@ -78,7 +78,7 @@
   }
 
   .container {
-    @apply max-w-[80rem] min-h-screen mx-auto;
+    @apply max-w-[80rem] min-h-[100vh] lg:min-h-screen mx-auto;
   }
 
   .flex-between {

@@ -13,7 +13,7 @@ const About = () => {
   const matches = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <section id="about" className="container relative block lg:flex lg:items-center">
+    <section id="about" className="container min-h-[70vh] relative block lg:flex lg:items-center">
       <div className="flex gap-x-8">
         <MotionViewport
           className="hidden lg:block w-1/3"

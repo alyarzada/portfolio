@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="container z-20 relative pt-[10vh] min-h-[calc(100vh-80px)]">
+    <section className="container z-20 relative pt-[10vh] min-h-[calc(90vh-80px)] lg:min-h-[calc(100vh-80px)]">
       <div className="flex-between">
         <div className="w-full flex-center-col lg:block lg:w-1/2">
           <Spotlight className="top-40 left-0 md:left-10 md:top-5" />
