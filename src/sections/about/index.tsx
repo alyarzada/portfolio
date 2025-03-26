@@ -13,7 +13,10 @@ const About = () => {
   const matches = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <section id="about" className="container min-h-[70vh] lg:min-h-screen relative block lg:flex lg:items-center">
+    <section
+      id="about"
+      className="container min-h-[70vh] lg:min-h-screen relative block lg:flex lg:items-center"
+    >
       <div className="flex gap-x-8">
         <MotionViewport
           className="hidden lg:block w-1/3"
@@ -47,14 +50,14 @@ const About = () => {
               have been immersing myself in both practical and theoretical
               knowledge in the field of front-end development, particularly
               focusing on React.js. In addition to various projects, my primary
-              focus has been on developing complex "dashboard type" systems from
-              scratch, incorporating all necessary frontend modules using modern
-              technologies. As someone who is eager to continually learn new
-              things, I closely follow emerging innovations in this field and
-              implement them in every project I undertake. In addition to my
-              expertise in the front-end field, I have also delved into the
-              server-side (Node.js) to fully grasp the field, developing several
-              different full-stack apps over the past years...
+              focus has been on developing complex SaaS systems incorporating
+              all necessary frontend modules using modern technologies. As
+              someone who is eager to continually learn new things, I closely
+              follow emerging innovations in this field and implement them in
+              every project I undertake. In addition to my expertise in the
+              front-end field, I have also delved into the server-side (Node.js)
+              to fully grasp the field, developing several different full-stack
+              apps over the past years...
             </p>
 
             {readMore && (

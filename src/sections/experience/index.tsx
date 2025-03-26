@@ -3,7 +3,6 @@ import { educationData, experienceData } from "@/data";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import Timeline from "./components/timeline";
-import Lamp from "@/components/complex/lamp";
 
 const tabsHeader = [
   {

@@ -66,9 +66,10 @@ const Hero = () => {
             })}
           >
             <p className="text-muted-foreground text-center lg:text-start mb-6">
-              Experienced React developer specializing in complex dashboard
-              projects, with over three years of expertise in modern tech stacks
-              for crafting dynamic and responsive web applications.
+              Experienced React developer with over 3 years of expertise in
+              building dynamic and responsive SaaS applications using modern
+              tech stacks. Skilled in developing scalable, high-performance web
+              solutions.
             </p>
           </Motion>
 
@@ -85,8 +86,8 @@ const Hero = () => {
               </GradientButton>
               <Button variant="outline">
                 <a
-                  href="/Tunar_Alyarzada_Resume.pdf"
-                  download="Tunar_Alyarzada_Resume"
+                  href="/Tunar_Alyarzada_CV.pdf"
+                  download="Tunar_Alyarzada_CV"
                   type="application/pdf"
                 >
                   Download CV

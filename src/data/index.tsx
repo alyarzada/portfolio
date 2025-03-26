@@ -44,6 +44,7 @@ import trello from "@/assets/svg/trello.svg";
 
 // projects
 import jubee from "@/assets/images/jubee.png";
+import compliancefeatures from "@/assets/images/compliancefeatures.webp";
 import rahatbina from "@/assets/images/rahatbina.jpg";
 import dashboard from "@/assets/images/dashboard.webp";
 import blog from "@/assets/images/blog.jpg";
@@ -90,13 +91,29 @@ export const socialMediaLinks = [
   },
 ];
 
-
 // -------------------------------------------------------------------------------------
 
 export const projectsData = [
   {
     id: 1,
-    title: "Jubee platform",
+    title: "Clever Compliance",
+    description: "AI-Powered Compliance Management System",
+    image: compliancefeatures,
+    techs: [
+      "React.js",
+      "TypeScript",
+      "Bootstrap",
+      "React Bootstrap",
+      "Syncfusion",
+      "React-select",
+      "React-chips",
+    ],
+    private: true,
+    demoLink: "https://www.clevercompliance.io/",
+  },
+  {
+    id: 2,
+    title: "Jubee",
     description: "A comprehensive multi-currency wallet application",
     image: jubee,
     techs: [
@@ -112,10 +129,10 @@ export const projectsData = [
       "i18next",
     ],
     private: true,
-    demoLink: "https://dev.jubee.eu",
+    demoLink: "https://jubee.eu",
   },
   {
-    id: 2,
+    id: 3,
     title: "Rahat Bina",
     description: "The Property Managment application for the large buildings",
     image: rahatbina,
@@ -136,7 +153,7 @@ export const projectsData = [
     demoLink: false,
   },
   {
-    id: 3,
+    id: 4,
     title: "Dashboard",
     description: "Dashboard typed project",
     image: dashboard,
@@ -154,7 +171,7 @@ export const projectsData = [
     demoLink: false,
   },
   {
-    id: 4,
+    id: 5,
     title: "Blog with CMS",
     description: "Blog website with Content management system",
     image: blog,
@@ -171,7 +188,7 @@ export const projectsData = [
     demoLink: "https://blogapp-byalyarzada.netlify.app",
   },
   {
-    id: 5,
+    id: 6,
     title: "E-commerce",
     description: "E-commerce application for electronics",
     image: ecommerce,
@@ -193,7 +210,7 @@ export const projectsData = [
     demoLink: false,
   },
   {
-    id: 6,
+    id: 7,
     title: "Social Media App",
     description: "Facebook clone",
     image: facebook,
@@ -220,23 +237,34 @@ export const experienceData = [
   {
     id: 1,
     title: "React Developer (remote)",
-    location: "Netondo (Jubee Platform) - Vilnius, Lithuania",
+    location: "Clever Compliance - Stockholm, Sweden",
     description: [
-      "Developed a comprehensive multi-currency wallet application from scratch using React.",
-      "Designed and implemented the application architecture based on Figma design, ensuring a seamless user experience.",
-      "Implemented complex multi-step forms with validation using React Hook Form and Zod schema validation",
+      "Provided ongoing support for the Clever Compliance Hub, a SaaS product, collaborating with cross-functional teams to resolve issues and implement new features.",
+      "Worked with complex UI components such as Syncfusion Maps, Charts, Data Tables, and more.",
+      "Technologies: React, TypeScript, Bootstrap, SCSS, Syncfusion, and other 3rd party packages.",
+      "Conducted regular maintenance and updates to ensure security, performance, and customer satisfaction.",
+      "Designed and developed the Clever Compliance company website from scratch using Next.js based on Figma, ensuring a user-friendly interface and seamless navigation.",
+    ],
+    date: "05/2024 - current",
+  },
+  {
+    id: 2,
+    title: "React Developer (remote)",
+    location: "Jubee.eu - Vilnius, Lithuania",
+    description: [
+      "Developed a comprehensive multi-currency wallet application from scratch using React and TypeScript based on Figma design",
+      "Implemented complex multi-step forms with validation using React Hook Form and Zod.",
       "Integrated various external API services for functionalities such as currency exchange, IBAN account management, and card transactions.",
       "Implemented two-factor authentication (2FA) for enhanced security using modern authentication protocols.",
-      "Utilized TypeScript for static type-checking and improved code quality.",
-      "Leveraged React Query for efficient data fetching and caching, ensuring optimal performance",
-      "Styled user interfaces using Tailwind CSS to achieve a clean and consistent design across the application.",
+      "Leveraged React Query for efficient data fetching and caching, ensuring optimal performance. ",
+      "Styled user interfaces using Tailwind CSS to achieve a clean and consistent design across the application. ",
     ],
     date: "07/2023 - 04/2024",
   },
   {
-    id: 2,
+    id: 3,
     title: "React Developer",
-    location: "Lider Advertising (Rahat Bina Platform) - Baku, Azerbaijan",
+    location: "Rahat Bina - Baku, Azerbaijan",
     description: [
       "Led the transformation of a large property management system from vanilla JavaScript to a React.js application, enhancing scalability and maintainability.",
       "Designed and implemented multiple role-based interfaces to cater to different user roles within the property management system.",
