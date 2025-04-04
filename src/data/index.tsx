@@ -97,7 +97,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Clever Compliance",
-    description: "AI-Powered Compliance Management System",
+    description: "An AI-Powered Compliance Management System",
     image: compliancefeatures,
     techs: [
       "React.js",
